@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter";
+  background-color: #282D35;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color:#21222A;
+}
+
+.nav > h1 {
+  color:#61DBFB;
+  padding-left: 5px;
+}
+
+.nav > h3 {
+  color:azure;
+  right: 0;
+  padding-right: 20px;
+  position: fixed;
+}
+
+.logo {
+  width: 40px;
+}
+
+.main {
+  padding: 20px;
+  background-color: #282D35;
+  color: azure;
+  height: 100%;
+  background-image: url(./logo2.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+.main > ul li {
+  margin: 10px;
+}
+
+.main > ul li::marker {
+  font-size: 1.4rem;
+  color: #61DBFB;
+}
