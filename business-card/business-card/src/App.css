@@ -57,10 +57,18 @@ body {
   font-weight: 500px;
 }
 
+.buttons > a {
+  text-decoration: none;
+}
+
 .buttons > button{
   width: 115px;
   height: 34px;
   border-radius: 5px;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 .linkedinbutton{
@@ -82,11 +90,17 @@ body {
   justify-content: space-between;
 }
 
-.about, .interests {
+.about {
   text-align: left;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 40px;
+  padding-top: 20px;
+}
+
+.interests {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .about > h3, .interests > h3 {
@@ -112,6 +126,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer > img:hover {
+  cursor: pointer;
 }
 
 .insta {
