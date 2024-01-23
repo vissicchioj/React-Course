@@ -1,15 +1,15 @@
 
-function Card() {
+function Card(props) {
     return (
         <div className="card">
-            <img src = {require("../images/swimmer.png")} className="swimmer"/>
+            <img src = {require("../images/" + props.img)} className="swimmer"/>
             <div className="cardInfo">
                 <p>
                     <img src = {require("../images/star.png")} className="star"/>
-                    5.0 <span className = 'spanLocation'>(6)·USA</span>
+                    {props.rating} <span className = 'spanLocation'>({props.reviewCount})·{props.country}</span>
                 </p>
-                <p>Life lessons with Katie Zaferes</p>
-                <p><span className = "spanPrice">From $136 </span> / person</p>
+                <p>{props.title}</p>
+                <p><span className = "spanPrice">From ${props.price} </span> / person</p>
             </div>
         </div>
     );
