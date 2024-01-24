@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   height: 15px;
+  
 }
 
 .swimmer {
@@ -70,4 +71,25 @@ body {
 
 .hero > p {
   margin-top: 0px;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  
+  text-overflow: ellipsis;
+  flex: 0 0 auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.cards {
+  padding-left: 4%;
+  display: flex;
+  overflow-x: scroll; 
 }

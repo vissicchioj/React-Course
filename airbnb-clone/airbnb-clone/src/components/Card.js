@@ -6,7 +6,7 @@ function Card(props) {
             <div className="cardInfo">
                 <p>
                     <img src = {require("../images/star.png")} className="star"/>
-                    {props.rating} <span className = 'spanLocation'>({props.reviewCount})·{props.country}</span>
+                    {props.stats.rating} <span className = 'spanLocation'>({props.stats.reviewCount})·{props.country}</span>
                 </p>
                 <p>{props.title}</p>
                 <p><span className = "spanPrice">From ${props.price} </span> / person</p>
