@@ -32,5 +32,9 @@ body {
   padding-bottom: 20px;
   background-color: white;
   justify-content: center;
-  gap: 40px;
+  border: 1px solid black;
+}
+
+.setup {
+  border-bottom: 1px solid black;
 }

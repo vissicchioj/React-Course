@@ -1,13 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import Joke from './components/Joke';
+import jokesData from './jokesData';
 
 function App() {
+  const jokeElements = jokesData.map(joke => {
+    return <Joke setup = {joke.setup} punchline = {joke.punchline} />
+  })
   return (
     <div className="App">
       <h1>Cheesy Pickup Lines</h1>
       <div className = "jokes">
-      <Joke 
+        {jokeElements}
+      </div>
+    </div>
+  );
+}
+
+export default App;
+      /* <Joke 
         setup = "I really have to download Waze..."
         punchline = "Cuz I keep getting lost in your eyes."
       />
@@ -26,10 +37,4 @@ function App() {
       <Joke 
         setup = "I didn't think I'd get this far..."
         punchline = ""
-      />
-      </div>
-    </div>
-  );
-}
-
-export default App;
+      /> */
