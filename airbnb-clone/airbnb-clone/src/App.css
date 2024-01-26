@@ -81,6 +81,7 @@ body {
   flex: 0 0 auto;
   flex-direction: column;
   display: flex;
+  position: relative;
 }
 
 .card > img {
@@ -92,4 +93,14 @@ body {
   padding-left: 4%;
   display: flex;
   overflow-x: scroll; 
+}
+
+.cardBadge {
+  position: absolute;
+  top: 6px;
+  left: 7%;
+  background-color: white;
+  padding: 3px 6px;
+  border-radius: 2px;
+  font-weight: bold;
 }
