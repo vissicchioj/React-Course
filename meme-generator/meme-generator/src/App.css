@@ -63,3 +63,8 @@ main {
 .form-button:hover {
   transform: scale(1.01);
 }
+
+.meme-image {
+  max-width: 100%;
+  
+}
