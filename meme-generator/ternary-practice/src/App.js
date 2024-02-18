@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    /**
+     * Challenge: Replace the if/else below with a ternary
+     * to determine the text that should display on the page
+     */
+    const isGoingOut = true
+    //let answer  = isGoingOut ? "Yes" : "No"// Use ternary here
+    
+    // if(isGoingOut === true) {
+    //     answer = "Yes"
+    // } else {
+    //     answer = "No"
+    // }
+
+    /**
+     * Challenge: move our ternary directly inside of the JSX
+     * so the "Yes" and "No" are determined inside the <h1>
+     * 
+     * Hint: you will no longer need the `answer` variable
+     */
+    
+    return (
+        <div className="state">
+            <h1 className="state--title">Do I feel like going out tonight?</h1>
+            <div className="state--value">
+                <h1>{isGoingOut ? "Yes" : "No"}</h1>
+            </div>
+        </div>
+    )
 }
-
-export default App;
