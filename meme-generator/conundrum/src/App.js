@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-    const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
+    //const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
 
     /**
      * Challenge: Map over the thingsArray to generate
@@ -10,7 +10,7 @@ function App() {
      * below the button
      */
 
-    const thingsElements = things.map(thing => <p key={thing}> {thing} </p>)
+    //const thingsElements = things.map(thing => <p key={thing}> {thing} </p>)
     
     /**
     * Challenge: Add an event listener to the button so when
@@ -25,9 +25,27 @@ function App() {
     * to the array!
     */
 
+    // function addItem() {
+    //   setThings(prevState => [...prevState, `Thing ${things.length + 1}`])
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+    const [things, setThings] = React.useState(["Thing 1", "Thing 2"])
+
+    const thingsElements = things.map(thing => <p>{thing}</p>)
+
     function addItem() {
-      const newThingText = `Thing ${things.length + 1}`
-      setThings(prevState => [...prevState, newThingText])
+        setThings(prevThings => [...prevThings, `Thing ${things.length + 1}`])
     }
 
     return (
