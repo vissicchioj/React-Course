@@ -22,6 +22,8 @@ export default function App(props) {
       <div style={styles} className='box' key = {boxList.id}></div>)
       )
 
+      
+
     return (
         <main>
             <h1>Boxes will go here</h1>
